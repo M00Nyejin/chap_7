@@ -32,7 +32,8 @@ class Control:
            if (a==0):
                 raise Exception("Base Error")
             
-        
+        except Exception as e:
+            return e
     
     def pow(self, a, b):
         try:
