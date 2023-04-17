@@ -28,7 +28,11 @@ class Control:
         return a*b
     
     def div(self, a, b):
-        return a/b
+         try:
+           if (a==0):
+                raise Exception("Base Error")
+            
+        
     
     def pow(self, a, b):
         try:
